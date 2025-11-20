@@ -9,7 +9,7 @@ import './App.css'
 
 function App() {
   const [isSDKLoaded, setIsSDKLoaded] = useState(false)
-  const [showOnboarding, setShowOnboarding] = useState(false)
+  const [showOnboarding, setShowOnboarding] = useState(true)
   const [user, setUser] = useState(null)
 
   useEffect(() => {
@@ -24,12 +24,6 @@ function App() {
           setUser(context.user)
         }
         
-        // Check if user has seen onboarding
-        const hasSeenOnboarding = localStorage.getItem('fartactoe-onboarding')
-        if (!hasSeenOnboarding) {
-          setShowOnboarding(true)
-        }
-        
         setIsSDKLoaded(true)
       } catch (error) {
         console.error('Failed to load SDK:', error)
@@ -41,7 +35,6 @@ function App() {
   }, [])
 
   const handleCloseOnboarding = () => {
-    localStorage.setItem('fartactoe-onboarding', 'true')
     setShowOnboarding(false)
   }
 
