@@ -11,6 +11,7 @@
     "iconUrl": "https://far-tac-toe.vercel.app/icon.png",
     "splashImageUrl": "https://far-tac-toe.vercel.app/splash.png",
     "splashBackgroundColor": "#8B5CF6",
+    "canonicalDomain": "far-tac-toe.vercel.app",
     "subtitle": "Classic Tic-Tac-Toe Game",
     "description": "Play tic-tac-toe against the CPU in medium difficulty. Challenge yourself in this classic game!",
     "screenshotUrls": [
@@ -24,7 +25,9 @@
     "tagline": "Beat the CPU at tic-tac-toe!",
     "ogTitle": "FarTacToe - Play Tic-Tac-Toe",
     "ogDescription": "Enjoy a classic game of tic-tac-toe against the CPU. Medium difficulty for a fun challenge!",
-    "ogImageUrl": "https://far-tac-toe.vercel.app/og-image.png"
+    "ogImageUrl": "https://far-tac-toe.vercel.app/og-image.png",
+    "requiredChains": ["eip155:8453"],
+    "requiredCapabilities": ["actions.ready"]
   }
 }
 
