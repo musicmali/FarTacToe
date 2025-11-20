@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './TicTacToe.css'
 
-const TicTacToe = () => {
+const TicTacToe = ({ onShowHelp }) => {
   const [board, setBoard] = useState(Array(9).fill(null))
   const [isPlayerTurn, setIsPlayerTurn] = useState(true)
   const [gameOver, setGameOver] = useState(false)
@@ -167,6 +167,11 @@ const TicTacToe = () => {
       <div className="game-header">
         <h1 className="game-title">FarTacToe</h1>
         <p className="game-subtitle">Play against the CPU - Medium Difficulty</p>
+        {onShowHelp && (
+          <button className="help-button" onClick={onShowHelp} title="How to play">
+            ?
+          </button>
+        )}
       </div>
 
       <div className="scoreboard">

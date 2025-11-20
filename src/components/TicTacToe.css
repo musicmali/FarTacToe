@@ -7,7 +7,7 @@
   width: 100%;
   max-width: 424px;
   height: 100%;
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--card-bg);
   border-radius: 20px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
@@ -15,6 +15,34 @@
 .game-header {
   text-align: center;
   margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.help-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #8B5CF6;
+  background: var(--card-bg);
+  color: #8B5CF6;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.help-button:hover {
+  background: #8B5CF6;
+  color: white;
+  transform: scale(1.1);
 }
 
 .game-title {
@@ -27,7 +55,7 @@
 
 .game-subtitle {
   font-size: 1rem;
-  color: #6B7280;
+  color: var(--text-secondary);
   font-weight: 400;
 }
 
@@ -93,15 +121,15 @@
   height: 90px;
   font-size: 2.5rem;
   font-weight: 700;
-  background: white;
-  border: 3px solid #E5E7EB;
+  background: var(--card-bg);
+  border: 3px solid var(--border-color);
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #1F2937;
+  color: var(--text-primary);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-family: 'Lexend', Arial, sans-serif;
 }
@@ -197,12 +225,24 @@
 }
 
 .btn-secondary {
-  background: linear-gradient(135deg, #F3F4F6 0%, #E5E7EB 100%);
+  background: linear-gradient(135deg, rgba(243, 244, 246, 0.9) 0%, rgba(229, 231, 235, 0.9) 100%);
   color: #374151;
+  border: 1px solid var(--border-color);
 }
 
 .btn-secondary:hover {
-  background: linear-gradient(135deg, #E5E7EB 0%, #D1D5DB 100%);
+  background: linear-gradient(135deg, rgba(229, 231, 235, 0.9) 0%, rgba(209, 213, 219, 0.9) 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  .btn-secondary {
+    background: linear-gradient(135deg, rgba(55, 65, 81, 0.9) 0%, rgba(75, 85, 99, 0.9) 100%);
+    color: var(--text-primary);
+  }
+  
+  .btn-secondary:hover {
+    background: linear-gradient(135deg, rgba(75, 85, 99, 0.9) 0%, rgba(107, 114, 128, 0.9) 100%);
+  }
 }
 
 .turn-indicator {
@@ -212,7 +252,7 @@
 
 .turn-indicator p {
   font-size: 0.95rem;
-  color: #6B7280;
+  color: var(--text-secondary);
   font-weight: 500;
 }
 
