@@ -28,6 +28,9 @@
     "ogImageUrl": "https://far-tac-toe.vercel.app/og-image.png",
     "requiredChains": ["eip155:8453"],
     "requiredCapabilities": ["actions.ready"]
+  },
+  "baseBuilder": {
+    "ownerAddress": "0x8020eDa73aCAc4c192eEF47937C50808B39ED91c"
   }
 }
 
