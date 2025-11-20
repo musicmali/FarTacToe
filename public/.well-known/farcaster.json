@@ -20,7 +20,7 @@
       "https://far-tac-toe.vercel.app/screenshot3.png"
     ],
     "primaryCategory": "games",
-    "tags": ["tic-tac-toe", "game", "miniapp", "puzzle", "base", "onchain"],
+    "tags": ["tictactoe", "game", "puzzle", "base", "onchain"],
     "heroImageUrl": "https://far-tac-toe.vercel.app/hero.png",
     "tagline": "Beat the CPU at tic-tac-toe!",
     "ogTitle": "FarTacToe - Play Tic-Tac-Toe",
