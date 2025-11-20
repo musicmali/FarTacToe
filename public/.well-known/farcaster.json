@@ -1,4 +1,9 @@
 {
+  "accountAssociation": {
+    "header": "eyJmaWQiOjM3MDUxOCwidHlwZSI6ImF1dGgiLCJrZXkiOiIweGNkYUQxMTllMjlhZDgzRTkyMjgyRkE4NzNDRmY5ZDI4MDI4ZjI0QjcifQ",
+    "payload": "eyJkb21haW4iOiJmYXItdGFjLXRvZS52ZXJjZWwuYXBwIn0",
+    "signature": "fVfrzi2MxvqcJPyZSSiZvrPaBdcFV7XV5nlvLwKxyXNl6pCSwMxxynUlFASE3jjKyxwKgNYeB+uYOM4HJWpkhxw="
+  },
   "miniapp": {
     "version": "1",
     "name": "FarTacToe",
