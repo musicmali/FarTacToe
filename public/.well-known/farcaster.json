@@ -2,24 +2,24 @@
   "miniapp": {
     "version": "1",
     "name": "FarTacToe",
-    "homeUrl": "https://fartactoe.vercel.app",
-    "iconUrl": "https://fartactoe.vercel.app/icon.png.svg",
-    "splashImageUrl": "https://fartactoe.vercel.app/splash.png.svg",
+    "homeUrl": "https://far-tac-toe.vercel.app",
+    "iconUrl": "https://far-tac-toe.vercel.app/icon.png.svg",
+    "splashImageUrl": "https://far-tac-toe.vercel.app/splash.png.svg",
     "splashBackgroundColor": "#8B5CF6",
     "subtitle": "Classic Tic-Tac-Toe Game",
     "description": "Play tic-tac-toe against the CPU in medium difficulty. Challenge yourself in this classic game!",
     "screenshotUrls": [
-      "https://fartactoe.vercel.app/screenshot1.png.svg",
-      "https://fartactoe.vercel.app/screenshot2.png.svg",
-      "https://fartactoe.vercel.app/screenshot3.png.svg"
+      "https://far-tac-toe.vercel.app/screenshot1.png.svg",
+      "https://far-tac-toe.vercel.app/screenshot2.png.svg",
+      "https://far-tac-toe.vercel.app/screenshot3.png.svg"
     ],
     "primaryCategory": "games",
     "tags": ["tic-tac-toe", "game", "miniapp", "puzzle"],
-    "heroImageUrl": "https://fartactoe.vercel.app/hero.png.svg",
+    "heroImageUrl": "https://far-tac-toe.vercel.app/hero.png.svg",
     "tagline": "Challenge the CPU in tic-tac-toe!",
     "ogTitle": "FarTacToe - Play Tic-Tac-Toe",
     "ogDescription": "Enjoy a classic game of tic-tac-toe against the CPU. Medium difficulty for a fun challenge!",
-    "ogImageUrl": "https://fartactoe.vercel.app/og-image.png.svg"
+    "ogImageUrl": "https://far-tac-toe.vercel.app/og-image.png.svg"
   }
 }
 
