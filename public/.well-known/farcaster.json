@@ -1,0 +1,25 @@
+{
+  "miniapp": {
+    "version": "1",
+    "name": "FarTacToe",
+    "homeUrl": "https://yourdomain.com",
+    "iconUrl": "https://yourdomain.com/icon.png",
+    "splashImageUrl": "https://yourdomain.com/splash.png",
+    "splashBackgroundColor": "#8B5CF6",
+    "subtitle": "Classic Tic-Tac-Toe Game",
+    "description": "Play tic-tac-toe against the CPU in medium difficulty. Challenge yourself in this classic game!",
+    "screenshotUrls": [
+      "https://yourdomain.com/screenshot1.png",
+      "https://yourdomain.com/screenshot2.png",
+      "https://yourdomain.com/screenshot3.png"
+    ],
+    "primaryCategory": "games",
+    "tags": ["tic-tac-toe", "game", "miniapp", "puzzle"],
+    "heroImageUrl": "https://yourdomain.com/hero.png",
+    "tagline": "Challenge the CPU in tic-tac-toe!",
+    "ogTitle": "FarTacToe - Play Tic-Tac-Toe",
+    "ogDescription": "Enjoy a classic game of tic-tac-toe against the CPU. Medium difficulty for a fun challenge!",
+    "ogImageUrl": "https://yourdomain.com/og-image.png"
+  }
+}
+

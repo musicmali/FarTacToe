@@ -1,0 +1,245 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 424px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.game-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #8B5CF6;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-subtitle {
+  font-size: 1rem;
+  color: #6B7280;
+  font-weight: 400;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 340px;
+  margin-bottom: 25px;
+  gap: 10px;
+}
+
+.score-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 80px;
+}
+
+.player-score {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.cpu-score {
+  background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.draw-score {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.score-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+.score-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1F2937;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.board-row {
+  display: flex;
+  gap: 10px;
+}
+
+.square {
+  width: 90px;
+  height: 90px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: white;
+  border: 3px solid #E5E7EB;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1F2937;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Lexend', Arial, sans-serif;
+}
+
+.square:hover:not(:disabled):not(.filled) {
+  background: #F9FAFB;
+  border-color: #8B5CF6;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(139, 92, 246, 0.2);
+}
+
+.square:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.square.filled {
+  cursor: not-allowed;
+}
+
+.square.player {
+  color: #10B981;
+  border-color: #10B981;
+  background: linear-gradient(135deg, #D1FAE5 0%, #A7F3D0 100%);
+}
+
+.square.cpu {
+  color: #EF4444;
+  border-color: #EF4444;
+  background: linear-gradient(135deg, #FEE2E2 0%, #FECACA 100%);
+}
+
+.square:disabled {
+  opacity: 0.7;
+}
+
+.game-status {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.status-message {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #8B5CF6;
+  animation: fadeInScale 0.5s ease;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.game-controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Lexend', Arial, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #7C3AED 0%, #6D28D9 100%);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #F3F4F6 0%, #E5E7EB 100%);
+  color: #374151;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #E5E7EB 0%, #D1D5DB 100%);
+}
+
+.turn-indicator {
+  text-align: center;
+  min-height: 24px;
+}
+
+.turn-indicator p {
+  font-size: 0.95rem;
+  color: #6B7280;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 424px) {
+  .game-container {
+    padding: 15px;
+    border-radius: 0;
+  }
+
+  .game-title {
+    font-size: 2rem;
+  }
+
+  .square {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+
+  .scoreboard {
+    max-width: 100%;
+  }
+
+  .score-item {
+    padding: 10px 15px;
+    min-width: 70px;
+  }
+}
+

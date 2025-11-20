@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <filter id="paper" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="5" result="noise"/>
+      <feDiffuseLighting in="noise" lighting-color="#fff" surfaceScale="1">
+        <feDistantLight azimuth="45" elevation="60"/>
+      </feDiffuseLighting>
+    </filter>
+    <linearGradient id="handDrawnBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b68ee;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#9370db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ba55d3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background with texture -->
+  <rect width="1024" height="1024" rx="180" fill="url(#handDrawnBg)"/>
+  <rect width="1024" height="1024" rx="180" fill="#000" opacity="0.03" filter="url(#paper)"/>
+  
+  <!-- Hand-drawn paper/board background -->
+  <path d="M 180 280 Q 182 278 520 275 Q 858 278 845 285 L 848 740 Q 845 745 510 748 Q 175 745 178 738 Z" 
+        fill="#fffef8" stroke="#e8e4d8" stroke-width="3" opacity="0.95"/>
+  
+  <!-- Sketchy grid lines -->
+  <g stroke="#8B5CF6" stroke-width="14" stroke-linecap="round" opacity="0.85" fill="none">
+    <!-- Vertical lines (slightly wobbly) -->
+    <path d="M 380 320 Q 382 450 380 580 Q 378 650 380 720"/>
+    <path d="M 640 320 Q 638 450 640 580 Q 642 650 640 720"/>
+    
+    <!-- Horizontal lines (slightly wobbly) -->
+    <path d="M 220 440 Q 380 438 540 440 Q 700 442 800 440"/>
+    <path d="M 220 600 Q 380 602 540 600 Q 700 598 800 600"/>
+  </g>
+  
+  <!-- Hand-drawn X (top-left) -->
+  <g stroke="#2dd4bf" stroke-width="18" stroke-linecap="round" fill="none" opacity="0.9">
+    <path d="M 250 350 Q 280 380 300 400 Q 320 420 345 445"/>
+    <path d="M 345 350 Q 320 375 300 395 Q 280 415 250 445"/>
+  </g>
+  
+  <!-- Hand-drawn O (top-center) -->
+  <ellipse cx="510" cy="375" rx="58" ry="62" fill="none" stroke="#f472b6" stroke-width="18" opacity="0.9"/>
+  
+  <!-- Hand-drawn X (middle-right) -->
+  <g stroke="#2dd4bf" stroke-width="18" stroke-linecap="round" fill="none" opacity="0.9">
+    <path d="M 680 540 Q 705 565 720 580 Q 735 595 755 615"/>
+    <path d="M 755 540 Q 735 560 720 575 Q 705 590 680 615"/>
+  </g>
+  
+  <!-- Hand-drawn O (bottom-left) -->
+  <ellipse cx="300" cy="665" rx="62" ry="58" fill="none" stroke="#f472b6" stroke-width="18" opacity="0.9"/>
+  
+  <!-- Decorative doodles -->
+  <g stroke="#fff" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.3">
+    <path d="M 50 100 Q 80 95 110 100"/>
+    <circle cx="900" cy="150" r="25"/>
+    <path d="M 100 900 L 120 920 L 100 940"/>
+    <path d="M 920 880 Q 920 900 920 920"/>
+  </g>
+  
+  <!-- Hand-drawn title with imperfect letters -->
+  <g fill="#ffffff" font-family="Lexend, Arial, sans-serif" font-weight="700" opacity="0.95">
+    <text x="512" y="160" font-size="95" text-anchor="middle" letter-spacing="2">FarTacToe</text>
+    <!-- Shadow effect -->
+    <text x="514" y="162" font-size="95" text-anchor="middle" letter-spacing="2" opacity="0.15">FarTacToe</text>
+  </g>
+  
+  <!-- Small doodle stars -->
+  <g fill="#fde047" opacity="0.7">
+    <path d="M 150 200 L 155 210 L 165 212 L 157 218 L 158 228 L 150 223 L 142 228 L 143 218 L 135 212 L 145 210 Z"/>
+    <path d="M 870 800 L 875 810 L 885 812 L 877 818 L 878 828 L 870 823 L 862 828 L 863 818 L 855 812 L 865 810 Z"/>
+  </g>
+</svg>
+

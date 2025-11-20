@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1284" height="2778" viewBox="0 0 1284 2778">
+  <defs>
+    <linearGradient id="ss1Bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b68ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9370db;stop-opacity:1" />
+    </linearGradient>
+    <filter id="texture">
+      <feTurbulence baseFrequency="0.02" numOctaves="2"/>
+      <feDisplacementMap in="SourceGraphic" scale="2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1284" height="2778" fill="url(#ss1Bg2)"/>
+  
+  <!-- Main container with sketchy border -->
+  <path d="M 100 310 Q 105 305 640 300 Q 1175 305 1180 315 L 1190 2465 Q 1185 2475 640 2480 Q 95 2475 98 2465 Z" 
+        fill="#fffef8" stroke="#e8e4d8" stroke-width="6" opacity="0.96"/>
+  
+  <!-- Header -->
+  <text x="642" y="540" font-family="Lexend, Arial, sans-serif" font-size="135" font-weight="700" fill="#8B5CF6" text-anchor="middle">
+    FarTacToe
+  </text>
+  <text x="645" y="543" font-family="Lexend, Arial, sans-serif" font-size="135" font-weight="700" fill="#8B5CF6" text-anchor="middle" opacity="0.15">
+    FarTacToe
+  </text>
+  <text x="642" y="640" font-family="Lexend, Arial, sans-serif" font-size="48" font-weight="400" fill="#6B7280" text-anchor="middle">
+    Play against the CPU - Medium
+  </text>
+  
+  <!-- Scoreboard with hand-drawn cards -->
+  <g transform="translate(242, 750)">
+    <!-- Player score -->
+    <path d="M 5 5 Q 7 3 120 2 Q 233 3 235 8 L 237 142 Q 235 147 120 150 Q 7 147 6 142 Z" 
+          fill="#d1fae5" stroke="#a7f3d0" stroke-width="3"/>
+    <text x="120" y="55" font-family="Lexend, Arial, sans-serif" font-size="28" fill="#374151" text-anchor="middle">You</text>
+    <text x="120" y="115" font-family="Lexend, Arial, sans-serif" font-size="68" font-weight="700" fill="#1F2937" text-anchor="middle">3</text>
+    
+    <!-- Draws -->
+    <path d="M 285 5 Q 287 3 400 2 Q 513 3 515 8 L 517 142 Q 515 147 400 150 Q 287 147 286 142 Z" 
+          fill="#fecaca" stroke="#fca5a5" stroke-width="3"/>
+    <text x="400" y="55" font-family="Lexend, Arial, sans-serif" font-size="28" fill="#374151" text-anchor="middle">Draws</text>
+    <text x="400" y="115" font-family="Lexend, Arial, sans-serif" font-size="68" font-weight="700" fill="#1F2937" text-anchor="middle">1</text>
+    
+    <!-- CPU score -->
+    <path d="M 565 5 Q 567 3 680 2 Q 793 3 795 8 L 797 142 Q 795 147 680 150 Q 567 147 566 142 Z" 
+          fill="#fed6e3" stroke="#fbcfe8" stroke-width="3"/>
+    <text x="680" y="55" font-family="Lexend, Arial, sans-serif" font-size="28" fill="#374151" text-anchor="middle">CPU</text>
+    <text x="680" y="115" font-family="Lexend, Arial, sans-serif" font-size="68" font-weight="700" fill="#1F2937" text-anchor="middle">2</text>
+  </g>
+  
+  <!-- Game Board with sketchy lines -->
+  <g transform="translate(292, 1000)">
+    <!-- Sketchy grid -->
+    <g stroke="#d1d5db" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.7">
+      <path d="M 235 5 Q 236 175 235 350 Q 234 525 235 690"/>
+      <path d="M 455 5 Q 454 175 455 350 Q 456 525 455 690"/>
+      <path d="M 5 235 Q 175 234 350 235 Q 525 236 690 235"/>
+      <path d="M 5 455 Q 175 456 350 455 Q 525 454 690 455"/>
+    </g>
+    
+    <!-- Filled squares with game pieces -->
+    <!-- Row 1 -->
+    <path d="M 12 12 Q 14 10 115 9 Q 216 10 218 15 L 220 216 Q 218 221 115 223 Q 14 221 13 216 Z" 
+          fill="#d1fae5" stroke="#a7f3d0" stroke-width="3"/>
+    <g stroke="#10B981" stroke-width="14" stroke-linecap="round" fill="none">
+      <path d="M 55 55 Q 80 80 95 95 Q 110 110 135 135"/>
+      <path d="M 135 55 Q 110 80 95 95 Q 80 110 55 135"/>
+    </g>
+    
+    <path d="M 248 12 Q 250 10 345 9 Q 440 10 442 15 L 444 216 Q 442 221 345 223 Q 250 221 249 216 Z" 
+          fill="#fee2e2" stroke="#fecaca" stroke-width="3"/>
+    <ellipse cx="345" cy="115" rx="58" ry="62" fill="none" stroke="#EF4444" stroke-width="14"/>
+    
+    <path d="M 472 12 Q 474 10 575 9 Q 676 10 678 15 L 680 216 Q 678 221 575 223 Q 474 221 473 216 Z" 
+          fill="#fafafa" stroke="#e5e7eb" stroke-width="4"/>
+    
+    <!-- Row 2 -->
+    <path d="M 12 248 Q 14 246 115 245 Q 216 246 218 251 L 220 440 Q 218 445 115 447 Q 14 445 13 440 Z" 
+          fill="#fafafa" stroke="#e5e7eb" stroke-width="4"/>
+    
+    <path d="M 248 248 Q 250 246 345 245 Q 440 246 442 251 L 444 440 Q 442 445 345 447 Q 250 445 249 440 Z" 
+          fill="#d1fae5" stroke="#a7f3d0" stroke-width="3"/>
+    <g stroke="#10B981" stroke-width="14" stroke-linecap="round" fill="none">
+      <path d="M 285 285 Q 315 315 330 330 Q 345 345 375 375"/>
+      <path d="M 375 285 Q 345 315 330 330 Q 315 345 285 375"/>
+    </g>
+    
+    <path d="M 472 248 Q 474 246 575 245 Q 676 246 678 251 L 680 440 Q 678 445 575 447 Q 474 445 473 440 Z" 
+          fill="#fee2e2" stroke="#fecaca" stroke-width="3"/>
+    <ellipse cx="575" cy="345" rx="62" ry="58" fill="none" stroke="#EF4444" stroke-width="14"/>
+    
+    <!-- Row 3 -->
+    <path d="M 12 472 Q 14 470 115 469 Q 216 470 218 475 L 220 676 Q 218 681 115 683 Q 14 681 13 676 Z" 
+          fill="#fee2e2" stroke="#fecaca" stroke-width="3"/>
+    <ellipse cx="115" cy="575" rx="58" ry="62" fill="none" stroke="#EF4444" stroke-width="14"/>
+    
+    <path d="M 248 472 Q 250 470 345 469 Q 440 470 442 475 L 444 676 Q 442 681 345 683 Q 250 681 249 676 Z" 
+          fill="#fafafa" stroke="#e5e7eb" stroke-width="4"/>
+    
+    <path d="M 472 472 Q 474 470 575 469 Q 676 470 678 475 L 680 676 Q 678 681 575 683 Q 474 681 473 676 Z" 
+          fill="#d1fae5" stroke="#a7f3d0" stroke-width="3"/>
+    <g stroke="#10B981" stroke-width="14" stroke-linecap="round" fill="none">
+      <path d="M 515 515 Q 540 540 555 555 Q 570 570 595 595"/>
+      <path d="M 595 515 Q 570 540 555 555 Q 540 570 515 595"/>
+    </g>
+  </g>
+  
+  <!-- Hand-drawn buttons -->
+  <g transform="translate(342, 1850)">
+    <path d="M 5 5 Q 8 3 140 2 Q 272 3 275 8 L 277 92 Q 275 97 140 100 Q 8 97 6 92 Z" 
+          fill="#8B5CF6" stroke="#7C3AED" stroke-width="3"/>
+    <text x="140" y="63" font-family="Lexend, Arial, sans-serif" font-size="38" font-weight="600" fill="white" text-anchor="middle">
+      New Game
+    </text>
+    
+    <path d="M 325 5 Q 328 3 460 2 Q 592 3 595 8 L 597 92 Q 595 97 460 100 Q 328 97 326 92 Z" 
+          fill="#e5e7eb" stroke="#d1d5db" stroke-width="3"/>
+    <text x="460" y="63" font-family="Lexend, Arial, sans-serif" font-size="38" font-weight="600" fill="#374151" text-anchor="middle">
+      Reset Score
+    </text>
+  </g>
+  
+  <!-- Turn indicator -->
+  <text x="642" y="2050" font-family="Lexend, Arial, sans-serif" font-size="43" font-weight="500" fill="#6B7280" text-anchor="middle">
+    Your turn (X)
+  </text>
+</svg>
+
