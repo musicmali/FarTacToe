@@ -26,6 +26,7 @@
     "ogTitle": "FarTacToe - Play Tic-Tac-Toe",
     "ogDescription": "Enjoy a classic game of tic-tac-toe against the CPU. Medium difficulty for a fun challenge!",
     "ogImageUrl": "https://far-tac-toe.vercel.app/og-image.png",
+    "noindex": false,
     "requiredChains": ["eip155:8453"],
     "requiredCapabilities": ["actions.ready"]
   },
