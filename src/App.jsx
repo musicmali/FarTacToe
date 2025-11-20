@@ -4,6 +4,7 @@ import TicTacToe from './components/TicTacToe'
 import OnboardingModal from './components/OnboardingModal'
 import UserProfile from './components/UserProfile'
 import LoadingSpinner from './components/LoadingSpinner'
+import NavigationBar from './components/NavigationBar'
 import './App.css'
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
   useEffect(() => {
     const load = async () => {
       try {
-        // Initialize the Farcaster SDK
+        // Initialize the SDK
         await sdk.actions.ready()
         
         // Get user context
@@ -31,7 +32,7 @@ function App() {
         
         setIsSDKLoaded(true)
       } catch (error) {
-        console.error('Failed to load Farcaster SDK:', error)
+        console.error('Failed to load SDK:', error)
         // Still show the game even if SDK fails (for browser testing)
         setIsSDKLoaded(true)
       }
@@ -44,6 +45,11 @@ function App() {
     setShowOnboarding(false)
   }
 
+  const handleHome = () => {
+    // Already on home, could add refresh logic if needed
+    window.location.reload()
+  }
+
   if (!isSDKLoaded) {
     return <LoadingSpinner />
   }
@@ -51,7 +57,13 @@ function App() {
   return (
     <div className="App">
       {user && <UserProfile user={user} />}
-      <TicTacToe onShowHelp={() => setShowOnboarding(true)} />
+      <div className="app-content">
+        <TicTacToe onShowHelp={() => setShowOnboarding(true)} />
+      </div>
+      <NavigationBar 
+        onShowHelp={() => setShowOnboarding(true)} 
+        onHome={handleHome}
+      />
       {showOnboarding && <OnboardingModal onClose={handleCloseOnboarding} />}
     </div>
   )
