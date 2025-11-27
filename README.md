@@ -1,4 +1,4 @@
-# FarTacToe - Tic-Tac-Toe MiniApp for Farcaster
+# FarTacToe - Tic-Tac-Toe MiniApp for Farcaster!
 
 A fun and interactive tic-tac-toe game built as a Farcaster miniapp on Base. Challenge the CPU in medium difficulty!
 
